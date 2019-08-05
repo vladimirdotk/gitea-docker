@@ -1,0 +1,8 @@
+version: '3'
+services:
+  gitea:
+    build: .
+    container_name: gitea
+    ports:
+      - "3000:3000"
+    command: "./gitea"
